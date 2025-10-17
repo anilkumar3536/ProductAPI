@@ -1,0 +1,26 @@
+.title{
+    color: orangered;
+}
+
+nav li  {
+    display: inline;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav {
+        margin-top: 40px;
+        float: right;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    color: orangered !important;
+    font-size: 20px;
+    font-weight: bold;
+}

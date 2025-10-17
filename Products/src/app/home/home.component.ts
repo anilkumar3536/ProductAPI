@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  data:any=[]
+
+  constructor(public ts:DataService, public router:Router){}
+
+  ngOnInit(){
+    this.ts.getData().subscribe((res)=>{
+      this.data=res;
+    })
+  }
+
+  productView(product:any){
+    this.router.navigate([`/product/${product.id}`])
+  }
 }

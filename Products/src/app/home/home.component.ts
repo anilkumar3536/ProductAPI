@@ -20,6 +20,6 @@ export class HomeComponent {
   }
 
   productView(product:any){
-    this.router.navigate([`/product/${product.id}`])
+    this.router.navigate([`/home/${product.id}`])
   }
 }

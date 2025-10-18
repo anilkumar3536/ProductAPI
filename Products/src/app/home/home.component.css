@@ -1,10 +1,8 @@
 .products {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 28px;
+ border: 1px solid #CCC;
+ padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 
@@ -13,9 +11,17 @@
   height: 180px;
   border-radius: 10px;
   padding: 5px;
+  
 }
 
 img{
     width:140px;
     height: 120px;
+}
+.products h3{
+  font-size: 16px;
+}
+.products .price{
+  font-size: 16px;
+  color: red;
 }
